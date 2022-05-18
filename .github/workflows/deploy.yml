@@ -14,8 +14,13 @@ jobs:
         with:
           node-version: 14
       - name: "installing packages..."
-        run: yarn
+        run: npm ci --force
       - name: "building....."
-        run: yarn build
+        run: npm run build
+      - name: "Deploy 🚀..."
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
 
         
