@@ -1,0 +1,16 @@
+.bg-img {
+  background-image: url("../../assets/layered-waves-haikei.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.my-name {
+  color: #99b898;
+  font-family: "Sacramento", cursive;
+  transition: name linear 7s ;
+}
+
+@keyframes name {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

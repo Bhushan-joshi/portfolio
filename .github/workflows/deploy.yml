@@ -1,0 +1,21 @@
+name: first github action
+on: [push]
+
+jobs:
+  # my-first-job:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - run: echo "hello world!!!"
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2 #this will clone this repo
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: "installing packages..."
+        run: yarn
+      - name: "building....."
+        run: yarn build
+
+        
