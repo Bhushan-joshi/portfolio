@@ -15,9 +15,13 @@ const Animated = () => {
 
         <Route path="/about" element={<About/>} />
 
-        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Home />} />
 
-        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Home />} />
+        <Route
+        path="/portfolio"
+        element={<Navigate to="/" replace />}
+    />
       </Routes>
     </AnimatePresence>
   );
