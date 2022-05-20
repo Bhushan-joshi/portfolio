@@ -15,7 +15,7 @@ const Home = () => {
         <div className=" flex flex-row justify-center mt-6 sm:mt-7">
           <Transitions duration={1} >
             <h1 className="text-center text-5xl sm:text-7xl font-semibold my-name ">
-              Bhushan C Joshi
+              Bhushan  Joshi
             </h1>
           </Transitions>
         </div>
