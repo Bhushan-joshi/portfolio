@@ -13,7 +13,7 @@ const Transitions = (props) => {
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ duration: props.duration ? props.duration : .5 }}
+      transition={{ duration: props.duration ? props.duration : .1 }}
       className={props.className}
       style={props.style}
     >

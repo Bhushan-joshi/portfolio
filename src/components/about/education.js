@@ -7,7 +7,7 @@ const animationConfiguration = {
 
 const Education = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen m-10">
       <motion.h1
         className="text-center text-4xl pt-16 underline"
         style={{ color: "#99b898", fontFamily: "Roboto" }}
@@ -15,7 +15,7 @@ const Education = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ duration: 1}}
+        transition={{ duration: 1,type: "spring", stiffness: 100}}
       >
         Education
       </motion.h1>
@@ -27,8 +27,9 @@ const Education = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              transition={{ duration: 1 }}
+              transition={{ duration: 1,type: "spring", stiffness: 100}}
               className="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4"
+             
             >
               <h1 className="text-white text-xl font-medium py-2">
                 DR.G.Y. Pathrikar College of CS and IT
@@ -61,7 +62,7 @@ const Education = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              transition={{ duration: 1 }}
+              transition={{ duration: 1,type: "spring", stiffness: 100}}
               className="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4"
             >
               <h1 className="text-white text-xl font-medium py-2">
@@ -80,7 +81,7 @@ const Education = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              transition={{ duration: 1 }}
+              transition={{ duration: 1,type: "spring", stiffness: 100}}
               className="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4"
             >
               <h1 className="text-white text-xl font-medium py-2">
