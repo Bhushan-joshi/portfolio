@@ -7,9 +7,9 @@ const animationConfiguration = {
 
 const Education = () => {
   return (
-    <div className="h-screen m-10 mr-0 sm:mr-10">
+    <div className=" m-10 mr-0 sm:mr-10 mb-36">
       <motion.h1
-        className="text-center text-4xl pt-16 underline"
+        className="text-center text-4xl pt-10"
         style={{ color: "#99b898", fontFamily: "Roboto" }}
         variants={animationConfiguration}
         initial="initial"
