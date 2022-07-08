@@ -4,6 +4,7 @@ import About from "./components/about/index";
 import Home from "./components/home/index";
 import Navbar from "./components/navbar/index";
 import { AnimatePresence } from "framer-motion";
+import Projects from "./components/projects";
 
 
 const Animated = () => {
@@ -15,7 +16,7 @@ const Animated = () => {
 
         <Route path="/about" element={<About/>} />
 
-        <Route path="/projects" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
 
         <Route path="/contact" element={<Home />} />
         <Route

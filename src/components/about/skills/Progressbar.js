@@ -31,12 +31,12 @@ const Progress = (props) => {
   return (
     <>
       <div ref={ref} className="flex justify-between mb-1 mt-4">
-        <span className="text-base font-medium  dark:text-white">
+        <span className="text-base font-medium  text-white">
           {props.name}
         </span>
-        <span className="text-sm font-medium  dark:text-white">{width}</span>
+        <span className="text-sm font-medium  text-white">{width}</span>
       </div>
-      <div className="w-full  rounded-full h-4 dark:bg-gray-700">
+      <div className="w-full  rounded-full h-4 bg-gray-700">
         <motion.div
           animate={animation}
           className="h-4 rounded-full"

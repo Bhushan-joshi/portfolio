@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <>
       <h1
-        className="text-center text-4xl mb-4 "
+        className="text-center text-5xl mb-4 "
         style={{ color: "#99b898", fontFamily: "Roboto" }}
       >
         Skills
