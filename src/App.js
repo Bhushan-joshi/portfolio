@@ -6,6 +6,8 @@ import Navbar from "./components/navbar/index";
 import { AnimatePresence } from "framer-motion";
 import Projects from "./components/projects";
 
+import Contact from "./components/contact";
+
 
 const Animated = () => {
   const location = useLocation();
@@ -18,7 +20,7 @@ const Animated = () => {
 
         <Route path="/projects" element={<Projects />} />
 
-        <Route path="/contact" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
         <Route
         path="/portfolio"
         element={<Navigate to="/" replace />}

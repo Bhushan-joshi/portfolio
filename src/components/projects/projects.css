@@ -1,0 +1,6 @@
+.bg_projects {
+  background-image: url("../../assets/projects.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

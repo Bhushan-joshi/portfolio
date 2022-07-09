@@ -1,6 +1,6 @@
 import React from "react";
 import { CgClose } from "react-icons/cg";
-import { motion , AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const dropIn = {
   hidden: {
@@ -37,11 +37,13 @@ const Modal = (props) => {
           className=" relative bg-white w-11/12"
           style={{ borderRadius: "6px" }}
         >
-          <CgClose
-            onClick={props.setIsOpen}
-            className="h-8 w-8 absolute right-4 top-2 text-slate-800 cursor-pointer"
-            title="close"
-          />
+          <div className="h-8 w-8 absolute right-4 top-2">
+            <CgClose
+              onClick={props.setIsOpen}
+              className="h-full w-full text-slate-800 cursor-pointer"
+              title="close"
+            />
+          </div>
           {props.children}
         </div>
       </motion.div>
