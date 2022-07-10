@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./about.css";
 import Form from "./form";
 import { db } from "../../firebase";
@@ -18,7 +18,9 @@ const Contact = () => {
     setEmail("");
     setMessage("");
   };
-
+  useEffect(() => {
+    document.title = "Contact me";  
+  }, []);
   const onSubmit = (e) => {
     e.preventDefault();
     addDoc(collection(db, "contacts"), {

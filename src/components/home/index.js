@@ -2,8 +2,12 @@ import "./home.css";
 // import logo from '../../assets/wave.gif'
 import Typical from "react-typical";
 import Transitions from "../Transitions";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Bhushan Joshi";  
+  }, []);
   return (
     <Transitions>
       <div className="bg-slate-800 bg-img h-screen ">

@@ -1,0 +1,141 @@
+.title__text{
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    color: #FFFFFF;
+    padding-left: 55px;
+    padding-top: 10px;
+}
+
+.main__image{
+    float: left;
+    padding: 7%;
+}
+.img{
+    width: 100%;
+    max-width:550px;  
+    object-fit: contain; 
+   
+} 
+
+.main__text{
+    margin-left: 50%;
+    margin-top: 12%;    
+}
+
+.main__text--heading{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    padding-right: 200px;
+}
+
+.main__text--description{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #f0f0f0;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding-right: 50%;
+}
+
+.a{
+    border: none;
+    background: transparent;
+    width: 200px;
+    height: 60px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #ffffff;    
+    cursor:pointer;
+}
+
+.footer{
+    float:inline-start;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.footer__text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #4f4f4fa8;
+}
+
+.username {
+    font-weight:bold;   
+}
+
+@media screen and (max-width: 1000px){
+    .title__text{
+        padding-left:30px;
+    }
+    .main__image{
+        margin-top: 40px;
+        padding:3%;
+    }
+    img{
+        max-width:650px;
+    }
+    .main__text{
+        margin-top :85%;
+        margin-left:0;
+        padding:4%;
+        
+    }
+    .main__text--heading{
+        padding-right: 0;
+    }
+    .main__text--description{
+        padding-right: 70px;
+    }
+    .footer{
+        width: 100%;
+        margin-top: 120px;
+    }
+  }
+
+@media screen and (max-width: 600px){
+    .title__text{
+        padding-left:10px;
+    }
+    .main__image{
+        margin-top: 40px;
+        padding:0;
+    }
+    img{
+        max-width:400px;
+    }
+    .main__text{
+        margin-top: 95%;
+        margin-left: 0;
+    }
+    .main__text--description{
+        padding-right: 70px;
+    }
+    .footer{
+        margin-top: 120px;
+    } 
+}
+ 
