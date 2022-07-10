@@ -1,6 +1,7 @@
 import './404.css'
 import Scarecrow from '../../assets/Scarecrow.png'
 import { useEffect } from 'react';
+import Transitions from '../Transitions'  
 
 const PageNotFound = () => {
   useEffect(() => {
@@ -8,7 +9,7 @@ const PageNotFound = () => {
   }, []);
   
   return (
-    <>
+    <Transitions>
     <div className = "title">
      <p className="title__text">404 NOT FOUND</p>
    </div>
@@ -21,7 +22,7 @@ const PageNotFound = () => {
        <p className="main__text--description">The page you are looking for might be removed or is temporarily unavailable</p>
        <a className='a' href='/'>LET'S GO HOME</a>
      </div>
-   </>
+   </Transitions>
   )
 }
 

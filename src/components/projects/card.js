@@ -79,7 +79,7 @@ const Card = ({ item }) => {
                       {item.name}
                     </a>
                   </div>
-                  <p className="text-gray-700 text-base pr-16 pl-0 lg:mt-6  ">
+                  <p className="text-gray-700 text-base sm:pr-16 pl-0 lg:mt-6  ">
                     {item.description}
                   </p>
                 </div>
