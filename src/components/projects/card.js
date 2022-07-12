@@ -75,6 +75,7 @@ const Card = ({ item }) => {
                       className="cursor-pointer hover:text-[#003a62]"
                       href={"https://" + item.link}
                       target="_blank"
+                      rel='noopener noreferrer'
                     >
                       {item.name}
                     </a>
@@ -98,6 +99,7 @@ const Card = ({ item }) => {
                         className="text-md mx-4 text-blue-500 hover:underline hover:text-red-500 active:text-yellow-500"
                         href={"https://" + item.link}
                         target="_blank"
+                        rel='noopener noreferrer'
                       >
                         Live
                       </a>
@@ -106,6 +108,7 @@ const Card = ({ item }) => {
                       className="text-md mx-4 text-blue-500 hover:underline hover:text-red-500 active:text-yellow-500"
                       href={item.github}
                       target="_blank"
+                      rel='noopener noreferrer'
                     >
                       Github
                     </a>
