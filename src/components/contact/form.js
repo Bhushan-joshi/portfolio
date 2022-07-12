@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Form = (props) => {
   return (
     <form className="sm:px-20 py-6" onSubmit={(e) => props.onSubmit(e)}>
-      <div className="mx-14 flex  mb-10">
+      <div className="sm:mx-14 mx-4 flex  mb-10">
         <motion.input
           initial={{ opacity: 0, y: "20px" }}
           animate={{ opacity: 1, y: "0" }}
@@ -30,7 +30,7 @@ const Form = (props) => {
           required
         />
       </div>
-      <div className="mx-14 mb-10">
+      <div className="sm:mx-14 mx-4 mb-10">
         <motion.input
           initial={{ opacity: 0, y: "20px" }}
           animate={{ opacity: 1, y: "0" }}
@@ -45,7 +45,7 @@ const Form = (props) => {
         />
       </div>
 
-      <div className="mx-14  mb-10">
+      <div className="sm:mx-14 mx-4  mb-10">
         <motion.textarea
           initial={{ opacity: 0, y: "20px" }}
           animate={{ opacity: 1, y: "0" }}
@@ -54,7 +54,7 @@ const Form = (props) => {
           rows="3"
           cols="50"
           className="w-full font-bold border-b-yellow-600 sm:text-2xl text-xl p-2 text-violet-500  border-b-4  focus:outline-none  bg-transparent"
-          placeholder="Tell me about you"
+          placeholder="Are you up for a coffee this weekend?"
           style={{ color: "#907bb9" }}
           value={props.message}
           required
