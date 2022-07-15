@@ -28,3 +28,4 @@ database.rules.json
 firebase.json
 .env
 .env.js
+/.firebase
