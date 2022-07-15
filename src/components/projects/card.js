@@ -32,14 +32,14 @@ const Card = ({ item }) => {
       <motion.div
         animate={animation}
         onClick={() => setIsOpen(true)}
-        className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white text-black cursor-pointer"
+        className="max-w-xs rounded-lg mb-20 overflow-hidden shadow-lg bg-white text-black cursor-pointer"
         ref={ref}
         style={{ opacity: "0", y: "50px" }}
       >
         <img
           className="w-full object-cover"
           src={item.img}
-          alt="Sunset in the mountains"
+          alt="Project Image"
         />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{item.name}</div>
