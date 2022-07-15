@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { RiCodeSSlashFill, RiHome3Fill } from "react-icons/ri";
-import { SiAboutdotme } from "react-icons/si";
-import { MdPermContactCalendar } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { MdOutlineMail } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
               />
             </Link>
             <Link to="/about">
-              <SiAboutdotme
+              <CgProfile
                 className="text-3xl hover:text-blue-700 active:text-blue-700 transition duration-100 ease-in-out"
                 data-bs-toggle="tooltip"
                 title="About"
@@ -31,7 +31,7 @@ const Navbar = () => {
               />
             </Link>
             <Link to="/contact">
-              <MdPermContactCalendar
+              <MdOutlineMail
                 className="text-3xl hover:text-blue-700 active:text-blue-700  transition duration-100 ease-in-out"
                 data-bs-toggle="tooltip"
                 title="Contact"
