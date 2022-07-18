@@ -5,6 +5,7 @@ import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { motion } from "framer-motion";
 import Transitions from "../Transitions";
+import Icons from "./icons";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -44,12 +45,12 @@ const Contact = () => {
 
   return (
     <Transitions>
-      <div className="bg_img w-screen h-screen flex justify-center items-center">
-        <div className="h-5/6 sm:w-8/12 w-full mt-14">
+      <div className="bg_img w-screen h-screen flex justify-center">
+        <div className="h-5/6 sm:w-8/12 w-full mt-10">
           <motion.h1
-          initial={{ opacity: 0, y: "20px" }}
-          animate={{ opacity: 1, y: "0" }}
-          transition={{ duration:0.7, type: "spring", stiffness:70}}
+            initial={{ opacity: 0, y: "20px" }}
+            animate={{ opacity: 1, y: "0" }}
+            transition={{ duration: 0.7, type: "spring", stiffness: 70 }}
             className="text-5xl flex justify-center mb-4"
             style={{ color: "#e1685e" }}
           >
@@ -92,6 +93,9 @@ const Contact = () => {
             setMessage={setMessage}
             onSubmit={onSubmit}
           />
+          <div className="sm:px-20 py-2">
+            <Icons />
+          </div>
         </div>
       </div>
     </Transitions>
