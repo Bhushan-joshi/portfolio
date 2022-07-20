@@ -4,6 +4,7 @@ import Modal from "./modal";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import './projects.css';
 
 const Card = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,14 +33,14 @@ const Card = ({ item }) => {
       <motion.div
         animate={animation}
         onClick={() => setIsOpen(true)}
-        className="max-w-xs rounded-lg mb-20 overflow-hidden shadow-lg bg-white text-black cursor-pointer"
+        className="drop max-w-xs rounded-lg mb-20 overflow-hidden shadow-lg bg-white text-black cursor-pointer"
         ref={ref}
         style={{ opacity: "0", y: "50px" }}
       >
         <img
           className="w-full object-cover"
           src={item.img}
-          alt="Project Image"
+          alt={item.name}
         />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{item.name}</div>

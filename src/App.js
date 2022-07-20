@@ -8,7 +8,8 @@ import { Suspense } from "react";
 import React from "react";
 import Contact from "./components/contact";
 import PageNotFound from "./components/404/PageNotFound";
-const Projects = React.lazy(() => import("./components/projects"));
+import Loader from "./components/loader";
+const Projects = React.lazy(() =>import("./components/projects"));
 
 const Animated = () => {
   const location = useLocation();
@@ -23,9 +24,7 @@ const Animated = () => {
           path="/projects"
           element={
             <Suspense
-              fallback={
-                <p className="text-white text-center text-2xl">Loading</p>
-              }
+              fallback={<Loader/>}
             >
               <Projects />
             </Suspense>
